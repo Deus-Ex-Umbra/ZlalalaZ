@@ -7,20 +7,11 @@ pgsql/
 *.db
 *.sqlite
 
-# Rust / Tauri compilación (preparado para desktop y móvil)
-target/
-src-tauri/target/
-gen/
-
 # Salidas de compilación web
 .next/
 out/
 dist/
 build/
-*.exe
-*.apk
-*.aab
-*.ipa
 
 # Variables de entorno y secretos
 .env

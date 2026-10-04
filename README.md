@@ -21,14 +21,10 @@ El proyecto está diseñado bajo un esquema multi-repositorio coordinado:
    - **Almacenamiento Sin Costos:** Integración con **Cloudflare R2** (S3 compatible, 10 GB gratis y 0$ costo de egress), con fallback a Supabase y local.
    - **Estándar:** Nomenclatura en español estricto, DTOs con `class-validator`, y registro central de errores (`errores.md`).
 
-3. **Escritorio y Móvil (`src-tauri/`)**:
-   - Repositorio: `https://github.com/Deus-Ex-Umbra/ZlalalaZ`
-   - **Stack:** Tauri v2 en **RUST**.
-   - **Convenciones:** Estándar canónico estricto de Rust (`snake_case`, `PascalCase`, `Result<T, E>`).
-   - **Capacidades:** Permite empaquetar el POS como aplicación nativa de escritorio ligera y con arquitectura lista para compilar a móvil (Android/iOS) en fases posteriores.
-
-4. **Base de Datos Local (`pgsql/`)**:
+3. **Base de Datos Local (`pgsql/`)**:
    - Motor PostgreSQL portable para ejecución y pruebas locales sin dependencias externas.
+
+> El acceso móvil se resuelve con la misma aplicación web (responsive e instalable como PWA); no hay aplicación nativa.
 
 ---
 
@@ -55,9 +51,9 @@ npm run build
 
 ## 🤖 Agentes IA y Google Antigravity IDE
 
-Toda la configuración de directrices, personalidad, habilidades y flujos de trabajo automatizados se encuentra en la carpeta `.agents/`:
-- `AGENTS.md`: Punto de entrada y normas obligatorias.
-- `profile.md`: Convenciones de idioma y estilos de código.
-- `skills.md`: Arquitectura técnica de Frontend, Backend, Tauri Rust y almacenamiento.
-- `workflows.md`: Comandos y pasos de validación.
-- `BACKLOG.md`: Hoja de ruta por fases y tareas pendientes.
+Toda la configuración de directrices, habilidades y seguimiento del proyecto se encuentra en la carpeta `.agents/`:
+- `AGENTS.md`: Punto de entrada y mapa de la carpeta.
+- `rules/`: Convenciones de código, arquitectura y reglas de dominio del negocio.
+- `skills/`: Habilidades invocables (diseño, desarrollo de módulos, consulta de la hoja de cálculo original).
+- `BACKLOG_GENERAL.md` / `BACKLOG_TEMPORAL.md`: Hoja de ruta por fases e iteración actual.
+- `pendientes/`: Requerimientos detallados por tarea.

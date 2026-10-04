@@ -1,25 +1,17 @@
-# Configuración Global de Agentes: ZLaLaLaZ
+# Sistema Agéntico de ZLaLaLaZ (Antigravity IDE)
 
-El proyecto **ZLaLaLaZ** es una plataforma integral de gestión de inventario, punto de venta (POS), compras y panel financiero para tiendas de calzado. Utiliza configuraciones modulares separadas para mantener el entorno limpio, escalable y con responsabilidades estrictamente divididas entre Frontend (Next.js), Backend (NestJS / Rust opcional) y Escritorio/Móvil (Tauri en Rust).
+Esta carpeta define el comportamiento del sistema guiado por Inteligencia Artificial (Google Antigravity) para el desarrollo y mantenimiento de ZLaLaLaZ: sistema web de inventario y Punto de Venta (POS) para la tienda de calzado "LA, LA, LA", que reemplaza su hoja de cálculo de Google Sheets.
 
-Como ingeniero IA asignado a este proyecto en **Google Antigravity IDE**, **DEBES LEER, ASIMILAR Y RESPETAR ESTRICTAMENTE** las reglas, estándares y flujos definidos en los siguientes archivos de esta carpeta `.agents/`:
+## Estructura
+- `rules/`: Directrices inflexibles que el agente DEBE seguir incondicionalmente. NOTA: Esta carpeta no debe ser traducida a `reglas` porque Antigravity la detecta con este nombre reservado.
+  - `00-convenciones-generales.md` y `00-superpoderes.md`: stack (NestJS + Next.js + PostgreSQL), español absoluto, cero texto/datos quemados, ciclo de trabajo.
+  - `01-backend.md`, `02-frontend.md`: arquitectura de cada submódulo.
+  - `03-dominio-negocio.md`: mapeo hoja de cálculo → sistema, reglas de negocio y fórmulas oficiales.
+  - `04-workflows.md`, `05-commits.md`, `06-traduccion.md`, `07-calidad-ui.md`, `08-exploracion.md`: comandos, commits, nomenclatura, calidad visual y exploración.
+- `skills/`: Habilidades invocables. NOTA: Esta carpeta no debe ser traducida a `habilidades` porque Antigravity la detecta con este nombre reservado.
+  - `lluvia-ideas` → `ejecucion-planes` (ciclo diseño → implementación), `desarrollo-modulos` (full-stack), `diseno-interfaz` (UI), `consulta-hoja-calculo` (lectura de la hoja original).
+- `BACKLOG_GENERAL.md`: hoja de ruta completa por fases, con el estado verificado en código.
+- `BACKLOG_TEMPORAL.md`: tareas de la iteración actual.
+- `pendientes/`: un archivo `NNN-tema.md` por requerimiento, con contexto, tareas y criterios de aceptación. Cada tarea del backlog referencia su pendiente.
 
-1. **[BACKLOG.md](BACKLOG.md)**: Contiene el listado de requerimientos, las historias de usuario de cada fase y el flujo de avance lógico. **Este es tu mapa de ruta.**
-2. **[profile.md](profile.md)**: Define la personalidad, el rol esperado, las convenciones de nomenclatura (Español Estricto para TypeScript/NestJS y Convención Canónica para Rust/Tauri).
-3. **[skills.md](skills.md)**: Establece la arquitectura, la estructura de carpetas, el manejo de imágenes con Cloudflare R2/WebP, el soporte para `driver.js`, y las reglas de diseño para Next.js, NestJS y Tauri en Rust (preparado para escritorio y móvil).
-4. **[workflows.md](workflows.md)**: Define las instrucciones para instalar paquetes, ejecutar comandos CLI, agregar componentes de ShadCN UI, generar módulos de NestJS, crear comandos de Tauri y los procesos de validación de compilación e i18n.
-
-## Instrucción Crítica de Ejecución
-
-Antes de comenzar a programar o al iniciar una sesión de trabajo:
-- Consulta el **`BACKLOG.md`** para saber en qué tarea o historia debes enfocarte.
-- Cerciórate de aplicar las reglas de nomenclatura descritas en **`profile.md`** según el lenguaje del módulo (`TypeScript` vs `Rust`).
-- **¡CERO TEXTO QUEMADO EN LA UI! (i18n ESTRICTO)**: Antes de dar por terminada una tarea en el frontend, verifica rigurosamente que NINGÚN texto esté hardcodeado en la interfaz y que cada llave de traducción (ej. `t('clave')`) exista realmente en su respectivo archivo JSON modular (`locales/{idioma}/{Pagina}.json`).
-- **Registro Central de Errores Obligatorio**: Todo nuevo error (API, React, Base de Datos, Almacenamiento, etc.) **DEBE** tener asignado un código único (ej. `ERR-CALZ-001`, `ERR-POS-002`, `ERR-R2-003`) y registrarse explícitamente en `backend/errores.md` junto con su descripción, causa y componente originario.
-- **Gestión de Imágenes con Presupuesto Cero**:
-  - Todo upload desde el frontend DEBE pasar previamente por compresión a WebP en el cliente (`browser-image-compression`).
-  - El backend debe usar el protocolo compatible con S3 para almacenar en **Cloudflare R2** (10 GB gratis, 0$ egress) o Supabase.
-  - El frontend debe renderizar imágenes a través de Next.js `<Image>` para aprovechar la caché perimetral en Vercel Edge.
-- **Tours Interactivos con `driver.js`**: Cada flujo operativo clave (Venta POS, Alta de Calzado, Registro de Gastos) debe contar con su paso interactivo guiado.
-- **Preparación de Interfaz Móvil**: La arquitectura del frontend y Tauri debe prever la interfaz móvil (Mobile POS / Bottom Navigation), la cual se construirá de forma prioritaria en las fases finales.
-- **Entorno Rust / Tauri**: El entorno actual NO cuenta con compilador de Rust instalado (`cargo`), por lo que **NUNCA ejecutes comandos de compilación de Rust**. Limítate a generar y estructurar los archivos fuente (`.rs`, `.toml`, `.json`) con sintaxis válida y canónica.
+Al iniciar cualquier tarea, el agente cargará automáticamente este contexto para asegurar calidad empresarial e higiene de código en cada interacción.
