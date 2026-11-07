@@ -1,6 +1,6 @@
-# Proyecto ZLaLaLaZ — Sistema de Gestión y POS para Tienda de Calzado
+# Proyecto LaLaLa — Sistema de Gestión y POS para Tienda de Calzado
 
-Plataforma unificada para la tienda de calzados **"LA, LA, LA" / "ZLaLaLaZ"**, integrando **Inventario con variantes de talla y color**, **Ingreso de Mercancía de proveedores**, **Punto de Venta (POS) rápido**, **Control de Gastos de Caja Chica** y **Panel Central Analítico con buscador instantáneo**.
+Plataforma unificada para la tienda de calzados **"LA, LA, LA" / "LaLaLa"**, integrando **Inventario con variantes de talla y color**, **Ingreso de Mercancía de proveedores**, **Punto de Venta (POS) rápido**, **Control de Gastos de Caja Chica** y **Panel Central Analítico con buscador instantáneo**.
 
 ---
 
@@ -9,14 +9,14 @@ Plataforma unificada para la tienda de calzados **"LA, LA, LA" / "ZLaLaLaZ"**, i
 El proyecto está diseñado bajo un esquema multi-repositorio coordinado:
 
 1. **Frontend (`frontend/`)**:
-   - Repositorio: `https://github.com/Deus-Ex-Umbra/frontend-ZlalalaZ`
+   - Repositorio: `https://github.com/Deus-Ex-Umbra/frontend-LaLaLa`
    - **Stack:** Next.js (App Router), TypeScript, Tailwind CSS, ShadCN UI, Lucide Icons.
    - **Tours Interactivos:** `driver.js` con guías paso a paso para el cajero y administradores.
    - **Optimización de Imágenes:** Compresión en cliente a formato WebP con `browser-image-compression` y caché perimetral con Next.js `<Image>` en Vercel Edge.
    - **Diseño Adaptable:** Preparado para escritorio y con interfaz móvil al final para atención en mostrador o en movimiento.
 
 2. **Backend (`backend/`)**:
-   - Repositorio: `https://github.com/Deus-Ex-Umbra/backend-ZlalalaZ`
+   - Repositorio: `https://github.com/Deus-Ex-Umbra/backend-LaLaLa`
    - **Stack:** NestJS con arquitectura modular, TypeScript, PostgreSQL (TypeORM/Prisma).
    - **Almacenamiento Sin Costos:** Integración con **Cloudflare R2** (S3 compatible, 10 GB gratis y 0$ costo de egress), con fallback a Supabase y local.
    - **Estándar:** Nomenclatura en español estricto, DTOs con `class-validator`, y registro central de errores (`errores.md`).

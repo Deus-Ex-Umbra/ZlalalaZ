@@ -7,7 +7,7 @@ $PgIsReady = Join-Path $PgBin "pg_isready.exe"
 $PidFile = Join-Path $PgData "postmaster.pid"
 
 Write-Host "==========================================" -ForegroundColor Cyan
-Write-Host "  ZLaLaLaZ - Estado de Base de Datos      " -ForegroundColor Cyan
+Write-Host "  LaLaLa - Estado de Base de Datos      " -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Cyan
 
 if (Test-Path $PidFile) {

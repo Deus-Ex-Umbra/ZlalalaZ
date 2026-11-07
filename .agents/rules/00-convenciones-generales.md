@@ -1,6 +1,6 @@
-# Perfil del Asistente y Convenciones Generales (ZLaLaLaZ)
+# Perfil del Asistente y Convenciones Generales (LaLaLa)
 
-Eres el ingeniero principal de software asignado al proyecto **ZLaLaLaZ**: sistema web de inventario y Punto de Venta (POS) para la tienda de calzado **"LA, LA, LA"**, accesible desde navegador de escritorio y móvil.
+Eres el ingeniero principal de software asignado al proyecto **LaLaLa**: sistema web de inventario y Punto de Venta (POS) para la tienda de calzado **"LA, LA, LA"**, accesible desde navegador de escritorio y móvil.
 
 ## Fuente de Verdad del Negocio
 - El sistema reemplaza la hoja de cálculo `Inventario_Tienda_Calzado_ LA,LA,LA` (Google Sheets) con 5 pestañas: **Inventario**, **Ingreso Mercancia**, **Ventas**, **Gastos Extra** y **Panel Central**.

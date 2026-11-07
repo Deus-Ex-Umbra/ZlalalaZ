@@ -31,3 +31,8 @@ yarn-error.log*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Scripts de mantenimiento/parches temporales
+fix_inventario.js
+replace-roles.js
+update_inventario.js

@@ -1,6 +1,6 @@
-# Sistema Agéntico de ZLaLaLaZ (Antigravity IDE)
+# Sistema Agéntico de LaLaLa (Antigravity IDE)
 
-Esta carpeta define el comportamiento del sistema guiado por Inteligencia Artificial (Google Antigravity) para el desarrollo y mantenimiento de ZLaLaLaZ: sistema web de inventario y Punto de Venta (POS) para la tienda de calzado "LA, LA, LA", que reemplaza su hoja de cálculo de Google Sheets.
+Esta carpeta define el comportamiento del sistema guiado por Inteligencia Artificial (Google Antigravity) para el desarrollo y mantenimiento de LaLaLa: sistema web de inventario y Punto de Venta (POS) para la tienda de calzado "LA, LA, LA", que reemplaza su hoja de cálculo de Google Sheets.
 
 ## Estructura
 - `rules/`: Directrices inflexibles que el agente DEBE seguir incondicionalmente. NOTA: Esta carpeta no debe ser traducida a `reglas` porque Antigravity la detecta con este nombre reservado.
@@ -10,6 +10,7 @@ Esta carpeta define el comportamiento del sistema guiado por Inteligencia Artifi
   - `04-workflows.md`, `05-commits.md`, `06-traduccion.md`, `07-calidad-ui.md`, `08-exploracion.md`: comandos, commits, nomenclatura, calidad visual y exploración.
 - `skills/`: Habilidades invocables. NOTA: Esta carpeta no debe ser traducida a `habilidades` porque Antigravity la detecta con este nombre reservado.
   - `lluvia-ideas` → `ejecucion-planes` (ciclo diseño → implementación), `desarrollo-modulos` (full-stack), `diseno-interfaz` (UI), `consulta-hoja-calculo` (lectura de la hoja original).
+  - Catálogos UI y diseño: `catalogo-shadcn` (componentes base accesibles), `catalogo-skipper-ui` (micro-interacciones y transiciones fluidas), `catalogo-cult-ui` (componentes interactivos de nicho e isla dinámica), `catalogo-watermelon-ui` (bloques de producción, dashboards y tablas) y `catalogo-motion-primitives` (animaciones atómicas, morphing y números rodantes).
 - `BACKLOG_GENERAL.md`: hoja de ruta completa por fases, con el estado verificado en código.
 - `BACKLOG_TEMPORAL.md`: tareas de la iteración actual.
 - `pendientes/`: un archivo `NNN-tema.md` por requerimiento, con contexto, tareas y criterios de aceptación. Cada tarea del backlog referencia su pendiente.

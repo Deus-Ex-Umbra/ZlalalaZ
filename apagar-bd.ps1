@@ -1,4 +1,4 @@
-# apagar-bd.ps1 - Detiene el motor PostgreSQL portable de ZLaLaLaZ
+# apagar-bd.ps1 - Detiene el motor PostgreSQL portable de LaLaLa
 $ErrorActionPreference = "Continue"
 $Raiz = $PSScriptRoot
 $PgBin = Join-Path $Raiz "pgsql\bin"
@@ -7,7 +7,7 @@ $PgCtl = Join-Path $PgBin "pg_ctl.exe"
 $PidFile = Join-Path $PgData "postmaster.pid"
 
 Write-Host "==========================================" -ForegroundColor Cyan
-Write-Host "  ZLaLaLaZ - Apagando Base de Datos       " -ForegroundColor Cyan
+Write-Host "  LaLaLa - Apagando Base de Datos       " -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Cyan
 
 # 1. Comprobar si está corriendo

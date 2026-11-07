@@ -1,6 +1,6 @@
 ---
 name: diseno-interfaz
-description: Principios de diseño (precisión, cuadrícula 4px, profundidad consistente) y memoria de diseño para mantener coherencia visual en las pantallas de ZLaLaLaZ (POS, inventario, panel).
+description: Principios de diseño (precisión, cuadrícula 4px, profundidad consistente) y memoria de diseño para mantener coherencia visual en las pantallas de LaLaLa (POS, inventario, panel).
 ---
 
 # Diseño de Interfaces (Principios + Consistencia)
@@ -13,7 +13,7 @@ Diseño preciso y pulido para software empresarial: interfaces limpias, modernas
 - Si se toma una decisión nueva (ej. altura estándar de botones), documéntala como comentario de token en `globals.css` o pide confirmación al usuario.
 
 ## 2. Dirección de Diseño
-ZLaLaLaZ usa **Sofisticación y Confianza** (estilo Stripe) para el panel financiero y **Precisión y Densidad** (estilo Linear) para POS e inventario: espaciado ajustado y mucha información visible.
+LaLaLa usa **Sofisticación y Confianza** (estilo Stripe) para el panel financiero y **Precisión y Densidad** (estilo Linear) para POS e inventario: espaciado ajustado y mucha información visible.
 
 ## 3. Principios Centrales
 1. **Cuadrícula de 4px:** espaciados `4, 8, 12, 16, 24, 32px`. Nunca valores arbitrarios (14px, 17px).

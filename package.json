@@ -1,8 +1,8 @@
 {
-  "name": "proyecto-zlalalaz",
+  "name": "proyecto-lalala",
   "version": "1.0.0",
   "private": true,
-  "description": "ZLaLaLaZ - Sistema de Gestión de Inventario y Punto de Venta (POS) para Tienda de Calzado (Web responsive y PWA)",
+  "description": "LaLaLa - Sistema de Gestión de Inventario y Punto de Venta (POS) para Tienda de Calzado (Web responsive y PWA)",
   "workspaces": [
     "frontend",
     "backend"

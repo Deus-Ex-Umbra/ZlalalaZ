@@ -1,9 +1,9 @@
 ---
 name: desarrollo-modulos
-description: Habilidad para construir nuevos módulos y funcionalidades full-stack (NestJS + Next.js) para el sistema POS y Tienda ZLaLaLaZ.
+description: Habilidad para construir nuevos módulos y funcionalidades full-stack (NestJS + Next.js) para el sistema POS y Tienda LaLaLa.
 ---
 
-# Desarrollo de Módulos (ZLaLaLaZ)
+# Desarrollo de Módulos (LaLaLa)
 
 Al usar esta habilidad para crear o completar un módulo de negocio, sigue los estándares del proyecto en todos los niveles:
 
