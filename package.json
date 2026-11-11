@@ -24,6 +24,7 @@
     "bd:encender": "powershell -ExecutionPolicy Bypass -File ./encender-bd.ps1",
     "bd:apagar": "powershell -ExecutionPolicy Bypass -File ./apagar-bd.ps1",
     "bd:estado": "powershell -ExecutionPolicy Bypass -File ./estado-bd.ps1",
+    "bd:semillar": "npm run semillar --prefix backend",
     "dev": "npm run iniciar:dev",
     "dev:backend": "npm run iniciar:dev:backend",
     "dev:frontend": "npm run iniciar:dev:frontend",
